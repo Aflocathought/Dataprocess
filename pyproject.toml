@@ -5,7 +5,9 @@ description = "Add your description here"
 authors = [
     { name = "Aflocat", email = "2013390462@qq.com" }
 ]
-dependencies = []
+dependencies = [
+    "polars>=1.36.1",
+]
 readme = "README.md"
 requires-python = ">= 3.11"
 

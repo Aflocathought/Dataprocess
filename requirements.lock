@@ -10,3 +10,7 @@
 #   universal: false
 
 -e file:.
+polars==1.36.1
+    # via dataprocess
+polars-runtime-32==1.36.1
+    # via polars

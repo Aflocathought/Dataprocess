@@ -8,3 +8,7 @@ wheels/
 
 # venv
 .venv
+
+# test & test's output
+out/
+tests/

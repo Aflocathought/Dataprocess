@@ -1,13 +1,13 @@
 """csv2parquet
 
-Robust, memory-efficient CSV -> Parquet conversion for very large files.
+鲁棒性强，内存高效的 CSV -> Parquet 转换，适用于超大文件。
 
-Design goals:
-- OOM-safe: never loads full CSV into RAM.
-- Lossless by default: never silently turns non-empty strings into nulls due to failed casts.
-- Type safety: promotes numeric types to 64-bit, and only parses datetimes if safe.
+设计目标：
+- 防止内存溢出：绝不将整个 CSV 文件加载到内存中。
+- 默认无损：绝不因转换失败而将非空字符串默默转换为 null。
+- 类型安全：将数值类型提升为 64 位，仅在安全时解析日期时间。
 
-Usage:
+用法：
   python src/convert/csv2parquet.py --input_file data/input.csv --output_file data/output.parquet
 """
 
